@@ -1,8 +1,6 @@
 .idea
 .DS_store
-Endo_sub_data.csv
-endometriosis_sub_data.csv
-TwoXChromosomes_sub_data.csv
+data/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
