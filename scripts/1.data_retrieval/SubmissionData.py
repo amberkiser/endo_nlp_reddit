@@ -1,6 +1,7 @@
 from psaw import PushshiftAPI
 import pandas as pd
 import numpy as np
+import datetime
 
 
 class SubmissionData(object):
@@ -28,10 +29,18 @@ class SubmissionData(object):
                     'created_utc': []}
 
         for post in self.submission_results:
-            sub_dict['title'].append(post.title)
-            sub_dict['text'].append(post.selftext)
-            sub_dict['link'].append(post.permalink)
-            sub_dict['created_utc'].append(post.created_utc)
+            try:
+                title = post.title
+                text = post.selftext
+                link = post.permalink
+                created = post.created_utc
+            except AttributeError:
+                continue
+            else:
+                sub_dict['title'].append(title)
+                sub_dict['text'].append(text)
+                sub_dict['link'].append(link)
+                sub_dict['created_utc'].append(created)
 
         self.submission_df = pd.DataFrame(sub_dict)
         return None
@@ -46,13 +55,6 @@ class SubmissionData(object):
         self.submission_df = self.submission_df.drop(columns=['title', 'created_utc'])
         return None
 
-
-
-
-api = PushshiftAPI()
-
-endo_sub = SubmissionData(api, 'Endo')
-endo_sub.retrieve_submissions(limit=100)
-endo_sub.submissions_to_dataframe()
-endo_sub.clean_sub_data()
-print(endo_sub.submission_df.head())
+    def save_sub_data(self):
+        self.submission_df.to_csv('../../data/%s_sub_data.csv' % self.subreddit_name, encoding='utf-8-sig')
+        return None
