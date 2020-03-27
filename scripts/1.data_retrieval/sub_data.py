@@ -1,7 +1,7 @@
 from psaw import PushshiftAPI
 import pandas as pd
 import numpy as np
-from SubmissionData import SubmissionData
+from retrieve_data import SubmissionData
 
 
 api = PushshiftAPI()
