@@ -22,23 +22,21 @@ class TuneSVM(object):
         ngram_range = params['ngram_range']
         max_df = params['max_df']
         min_df = params['min_df']
-        max_features = params['max_features']
 
         C = params['C']
 
         for n in ngram_range:
             for mx in max_df:
                 for mn in min_df:
-                    for m in max_features:
-                        for c in C:
-                            self.run_cv(n, mx, mn, m, c, vector)
+                    for c in C:
+                        self.run_cv(n, mx, mn, c, vector)
         return None
 
     def save_scores_csv(self, title):
         self.cv_scores.to_csv('../../results/tuning/%s_tuning.csv' % title)
         return None
 
-    def run_cv(self, ngram_range, max_df, min_df, max_features, C, vector):
+    def run_cv(self, ngram_range, max_df, min_df, C, vector):
         fold = 0
         for train_index, val_index in self.k_folds.split(self.data):
             fold += 1
@@ -72,27 +70,26 @@ class TuneSVM(object):
                 y_train_prob = clf.predict_proba(X_train_vec)
                 y_train_prob = y_train_prob[:, 1]
                 train_scores = self.evaluate_cv_results(y_train, y_train_pred, y_train_prob,
-                                                        ngram_range, max_df, min_df, max_features, C)
+                                                        ngram_range, max_df, min_df, C)
 
                 y_val_pred = clf.predict(X_val_vec)
                 y_val_prob = clf.predict_proba(X_val_vec)
                 y_val_prob = y_val_prob[:, 1]
                 val_scores = self.evaluate_cv_results(y_val, y_val_pred, y_val_prob,
-                                                      ngram_range, max_df, min_df, max_features, C)
+                                                      ngram_range, max_df, min_df, C)
 
                 eval_df = self.create_scores_dataframe(train_scores, val_scores, fold, vector)
                 self.cv_scores = pd.concat([self.cv_scores, eval_df])
                 self.save_scores_csv('temp_%s' % self.title)
         return None
 
-    def evaluate_cv_results(self, y_true, y_pred, y_prob, ngram_range, max_df, min_df, max_features, C):
-        scores = {'ngram_range': [], 'max_df': [], 'min_df': [], 'max_features': [], 'C': [],
+    def evaluate_cv_results(self, y_true, y_pred, y_prob, ngram_range, max_df, min_df, C):
+        scores = {'ngram_range': [], 'max_df': [], 'min_df': [], 'C': [],
                   'Acc': [], 'recall': [], 'PPV': [], 'AUC': []}
 
         scores['ngram_range'].append(ngram_range)
         scores['max_df'].append(max_df)
         scores['min_df'].append(min_df)
-        scores['max_features'].append(max_features)
         scores['C'].append(C)
         scores['Acc'].append(accuracy_score(y_true, y_pred))
         scores['recall'].append(recall_score(y_true, y_pred))
