@@ -290,7 +290,7 @@ class TuneNeuralNet(object):
                 model.add(Dense(1, activation='sigmoid'))
                 model.compile(loss='binary_crossentropy', optimizer=optimizer, metrics=['accuracy'])
                 history = model.fit(X_train_vec, y_train, epochs=3000, validation_split=0.2, batch_size=100,
-                                    callbacks=[early_stopping_monitor], verbose=0)
+                                    callbacks=[early_stopping_monitor], verbose=1)
 
                 y_train_prob = model.predict(X_train_vec).flatten()
                 y_train_pred = model.predict_classes(X_train_vec).flatten()
