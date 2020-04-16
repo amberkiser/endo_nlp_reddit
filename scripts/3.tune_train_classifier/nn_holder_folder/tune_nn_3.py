@@ -17,7 +17,7 @@ nn_params = {
     'optimizer':['Adam']
 }
 
-tune_nn = TuneNeuralNet(train_data, 3, stopwords, 'nn3')
+tune_nn = TuneNeuralNet(train_data, 100, 3, stopwords, 'nn3')
 tune_nn.tune_parameters(nn_params, 'count')
 tune_nn.tune_parameters(nn_params, 'tfidf')
 tune_nn.save_scores_csv('nn3')
