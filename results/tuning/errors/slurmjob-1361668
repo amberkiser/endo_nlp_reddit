@@ -1,0 +1,188 @@
+2020-04-16 10:15:16.880197: I tensorflow/core/platform/cpu_feature_guard.cc:145] This TensorFlow binary is optimized with Intel(R) MKL-DNN to use the following CPU instructions in performance critical operations:  SSE4.1 SSE4.2
+To enable them in non-MKL-DNN operations, rebuild TensorFlow with the appropriate compiler flags.
+2020-04-16 10:15:16.888437: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2666480000 Hz
+2020-04-16 10:15:16.890040: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5602503f0090 executing computations on platform Host. Devices:
+2020-04-16 10:15:16.890075: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+OMP: Info #212: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #210: KMP_AFFINITY: Affinity capable, using global cpuid leaf 11 info
+OMP: Info #154: KMP_AFFINITY: Initial OS proc set respected: 0-23
+OMP: Info #156: KMP_AFFINITY: 24 available OS procs
+OMP: Info #157: KMP_AFFINITY: Uniform topology
+OMP: Info #179: KMP_AFFINITY: 2 packages x 6 cores/pkg x 2 threads/core (12 total cores)
+OMP: Info #214: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #171: KMP_AFFINITY: OS proc 3 maps to package 0 core 0 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 15 maps to package 0 core 0 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 11 maps to package 0 core 1 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 23 maps to package 0 core 1 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 7 maps to package 0 core 2 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 19 maps to package 0 core 2 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 1 maps to package 0 core 8 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 13 maps to package 0 core 8 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 9 maps to package 0 core 9 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 21 maps to package 0 core 9 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 5 maps to package 0 core 10 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 17 maps to package 0 core 10 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 0 maps to package 1 core 0 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 12 maps to package 1 core 0 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 8 maps to package 1 core 1 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 20 maps to package 1 core 1 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 4 maps to package 1 core 2 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 16 maps to package 1 core 2 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 2 maps to package 1 core 8 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 14 maps to package 1 core 8 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 10 maps to package 1 core 9 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 22 maps to package 1 core 9 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 6 maps to package 1 core 10 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 18 maps to package 1 core 10 thread 1 
+OMP: Info #250: KMP_AFFINITY: pid 18483 tid 18483 thread 0 bound to OS proc set 3
+OMP: Info #250: KMP_AFFINITY: pid 18483 tid 18584 thread 3 bound to OS proc set 1
+OMP: Info #250: KMP_AFFINITY: pid 18483 tid 18582 thread 1 bound to OS proc set 11
+OMP: Info #250: KMP_AFFINITY: pid 18483 tid 18586 thread 5 bound to OS proc set 5
+OMP: Info #250: KMP_AFFINITY: pid 18483 tid 18587 thread 6 bound to OS proc set 0
+OMP: Info #250: KMP_AFFINITY: pid 18483 tid 18588 thread 7 bound to OS proc set 8
+OMP: Info #250: KMP_AFFINITY: pid 18483 tid 18589 thread 8 bound to OS proc set 4
+OMP: Info #250: KMP_AFFINITY: pid 18483 tid 18590 thread 9 bound to OS proc set 2
+OMP: Info #250: KMP_AFFINITY: pid 18483 tid 18583 thread 2 bound to OS proc set 7
+OMP: Info #250: KMP_AFFINITY: pid 18483 tid 18585 thread 4 bound to OS proc set 9
+OMP: Info #250: KMP_AFFINITY: pid 18483 tid 18591 thread 10 bound to OS proc set 10
+OMP: Info #250: KMP_AFFINITY: pid 18483 tid 18592 thread 11 bound to OS proc set 6
+Using TensorFlow backend.
+WARNING:tensorflow:From /uufs/chpc.utah.edu/common/home/u0883495/software/pkg/miniconda3/lib/python3.7/site-packages/tensorflow/python/ops/nn_impl.py:180: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2020-04-16 10:16:07.978589: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1412] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
+WARNING:tensorflow:From /uufs/chpc.utah.edu/common/home/u0883495/software/pkg/miniconda3/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:422: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+OMP: Info #250: KMP_AFFINITY: pid 18483 tid 18538 thread 12 bound to OS proc set 15
+OMP: Info #250: KMP_AFFINITY: pid 18483 tid 18625 thread 13 bound to OS proc set 23
+OMP: Info #250: KMP_AFFINITY: pid 18483 tid 18627 thread 15 bound to OS proc set 13
+OMP: Info #250: KMP_AFFINITY: pid 18483 tid 18626 thread 14 bound to OS proc set 19
+OMP: Info #250: KMP_AFFINITY: pid 18483 tid 18630 thread 18 bound to OS proc set 12
+OMP: Info #250: KMP_AFFINITY: pid 18483 tid 18629 thread 17 bound to OS proc set 17
+OMP: Info #250: KMP_AFFINITY: pid 18483 tid 18628 thread 16 bound to OS proc set 21
+OMP: Info #250: KMP_AFFINITY: pid 18483 tid 18631 thread 19 bound to OS proc set 20
+OMP: Info #250: KMP_AFFINITY: pid 18483 tid 18633 thread 21 bound to OS proc set 14
+OMP: Info #250: KMP_AFFINITY: pid 18483 tid 18634 thread 22 bound to OS proc set 22
+OMP: Info #250: KMP_AFFINITY: pid 18483 tid 18632 thread 20 bound to OS proc set 16
+OMP: Info #250: KMP_AFFINITY: pid 18483 tid 18635 thread 23 bound to OS proc set 18
+OMP: Info #250: KMP_AFFINITY: pid 18483 tid 18639 thread 24 bound to OS proc set 3
+OMP: Info #250: KMP_AFFINITY: pid 18483 tid 18641 thread 26 bound to OS proc set 7
+OMP: Info #250: KMP_AFFINITY: pid 18483 tid 18640 thread 25 bound to OS proc set 11
+OMP: Info #250: KMP_AFFINITY: pid 18483 tid 18642 thread 27 bound to OS proc set 1
+OMP: Info #250: KMP_AFFINITY: pid 18483 tid 18643 thread 28 bound to OS proc set 9
+OMP: Info #250: KMP_AFFINITY: pid 18483 tid 18645 thread 30 bound to OS proc set 0
+OMP: Info #250: KMP_AFFINITY: pid 18483 tid 18644 thread 29 bound to OS proc set 5
+OMP: Info #250: KMP_AFFINITY: pid 18483 tid 18646 thread 31 bound to OS proc set 8
+OMP: Info #250: KMP_AFFINITY: pid 18483 tid 18648 thread 33 bound to OS proc set 2
+OMP: Info #250: KMP_AFFINITY: pid 18483 tid 18649 thread 34 bound to OS proc set 10
+OMP: Info #250: KMP_AFFINITY: pid 18483 tid 18647 thread 32 bound to OS proc set 4
+OMP: Info #250: KMP_AFFINITY: pid 18483 tid 18650 thread 35 bound to OS proc set 6
+2020-04-16 10:17:02.541610: W tensorflow/core/common_runtime/bfc_allocator.cc:314] Allocator (mklcpu) ran out of memory trying to allocate 11.09GiB (rounded to 11908403200).  Current allocation summary follows.
+2020-04-16 10:17:02.541686: I tensorflow/core/common_runtime/bfc_allocator.cc:764] Bin (256): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-04-16 10:17:02.541704: I tensorflow/core/common_runtime/bfc_allocator.cc:764] Bin (512): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-04-16 10:17:02.541718: I tensorflow/core/common_runtime/bfc_allocator.cc:764] Bin (1024): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-04-16 10:17:02.541730: I tensorflow/core/common_runtime/bfc_allocator.cc:764] Bin (2048): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-04-16 10:17:02.541743: I tensorflow/core/common_runtime/bfc_allocator.cc:764] Bin (4096): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-04-16 10:17:02.541763: I tensorflow/core/common_runtime/bfc_allocator.cc:764] Bin (8192): 	Total Chunks: 9, Chunks in use: 8. 112.5KiB allocated for chunks. 100.0KiB in use in bin. 100.0KiB client-requested in use in bin.
+2020-04-16 10:17:02.541778: I tensorflow/core/common_runtime/bfc_allocator.cc:764] Bin (16384): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-04-16 10:17:02.541791: I tensorflow/core/common_runtime/bfc_allocator.cc:764] Bin (32768): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-04-16 10:17:02.541806: I tensorflow/core/common_runtime/bfc_allocator.cc:764] Bin (65536): 	Total Chunks: 1, Chunks in use: 1. 68.0KiB allocated for chunks. 68.0KiB in use in bin. 68.0KiB client-requested in use in bin.
+2020-04-16 10:17:02.541823: I tensorflow/core/common_runtime/bfc_allocator.cc:764] Bin (131072): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-04-16 10:17:02.541838: I tensorflow/core/common_runtime/bfc_allocator.cc:764] Bin (262144): 	Total Chunks: 13, Chunks in use: 12. 3.99MiB allocated for chunks. 3.62MiB in use in bin. 3.42MiB client-requested in use in bin.
+2020-04-16 10:17:02.541852: I tensorflow/core/common_runtime/bfc_allocator.cc:764] Bin (524288): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-04-16 10:17:02.541866: I tensorflow/core/common_runtime/bfc_allocator.cc:764] Bin (1048576): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-04-16 10:17:02.541879: I tensorflow/core/common_runtime/bfc_allocator.cc:764] Bin (2097152): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-04-16 10:17:02.541892: I tensorflow/core/common_runtime/bfc_allocator.cc:764] Bin (4194304): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-04-16 10:17:02.541905: I tensorflow/core/common_runtime/bfc_allocator.cc:764] Bin (8388608): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-04-16 10:17:02.541918: I tensorflow/core/common_runtime/bfc_allocator.cc:764] Bin (16777216): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-04-16 10:17:02.541932: I tensorflow/core/common_runtime/bfc_allocator.cc:764] Bin (33554432): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-04-16 10:17:02.541945: I tensorflow/core/common_runtime/bfc_allocator.cc:764] Bin (67108864): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-04-16 10:17:02.541961: I tensorflow/core/common_runtime/bfc_allocator.cc:764] Bin (134217728): 	Total Chunks: 0, Chunks in use: 0. 0B allocated for chunks. 0B in use in bin. 0B client-requested in use in bin.
+2020-04-16 10:17:02.541976: I tensorflow/core/common_runtime/bfc_allocator.cc:764] Bin (268435456): 	Total Chunks: 10, Chunks in use: 6. 94.40GiB allocated for chunks. 66.54GiB in use in bin. 66.54GiB client-requested in use in bin.
+2020-04-16 10:17:02.541990: I tensorflow/core/common_runtime/bfc_allocator.cc:780] Bin for 11.09GiB was 256.00MiB, Chunk State: 
+2020-04-16 10:17:02.542010: I tensorflow/core/common_runtime/bfc_allocator.cc:786]   Size: 4.91GiB | Requested Size: 12.5KiB | in_use: 0 | bin_num: 20, prev:   Size: 12.5KiB | Requested Size: 12.5KiB | in_use: 1 | bin_num: -1
+2020-04-16 10:17:02.542031: I tensorflow/core/common_runtime/bfc_allocator.cc:786]   Size: 4.91GiB | Requested Size: 12.5KiB | in_use: 0 | bin_num: 20, prev:   Size: 11.09GiB | Requested Size: 11.09GiB | in_use: 1 | bin_num: -1
+2020-04-16 10:17:02.542048: I tensorflow/core/common_runtime/bfc_allocator.cc:786]   Size: 8.22GiB | Requested Size: 0B | in_use: 0 | bin_num: 20, prev:   Size: 11.09GiB | Requested Size: 11.09GiB | in_use: 1 | bin_num: -1
+2020-04-16 10:17:02.542064: I tensorflow/core/common_runtime/bfc_allocator.cc:786]   Size: 9.82GiB | Requested Size: 0B | in_use: 0 | bin_num: 20, prev:   Size: 11.09GiB | Requested Size: 11.09GiB | in_use: 1 | bin_num: -1
+2020-04-16 10:17:02.542077: I tensorflow/core/common_runtime/bfc_allocator.cc:793] Next region of size 17179869184
+2020-04-16 10:17:02.542092: I tensorflow/core/common_runtime/bfc_allocator.cc:800] InUse at 0x2b6c30000040 next 4 of size 11908403200
+2020-04-16 10:17:02.542104: I tensorflow/core/common_runtime/bfc_allocator.cc:800] InUse at 0x2b6ef5cbd040 next 14 of size 296448
+2020-04-16 10:17:02.542117: I tensorflow/core/common_runtime/bfc_allocator.cc:800] InUse at 0x2b6ef5d05640 next 15 of size 296448
+2020-04-16 10:17:02.542129: I tensorflow/core/common_runtime/bfc_allocator.cc:800] InUse at 0x2b6ef5d4dc40 next 16 of size 296448
+2020-04-16 10:17:02.542140: I tensorflow/core/common_runtime/bfc_allocator.cc:800] InUse at 0x2b6ef5d96240 next 17 of size 296448
+2020-04-16 10:17:02.542152: I tensorflow/core/common_runtime/bfc_allocator.cc:800] InUse at 0x2b6ef5dde840 next 18 of size 296448
+2020-04-16 10:17:02.542165: I tensorflow/core/common_runtime/bfc_allocator.cc:800] InUse at 0x2b6ef5e26e40 next 19 of size 329216
+2020-04-16 10:17:02.542177: I tensorflow/core/common_runtime/bfc_allocator.cc:800] InUse at 0x2b6ef5e77440 next 20 of size 296448
+2020-04-16 10:17:02.542189: I tensorflow/core/common_runtime/bfc_allocator.cc:800] InUse at 0x2b6ef5ebfa40 next 21 of size 296448
+2020-04-16 10:17:02.542201: I tensorflow/core/common_runtime/bfc_allocator.cc:800] InUse at 0x2b6ef5f08040 next 22 of size 296448
+2020-04-16 10:17:02.542212: I tensorflow/core/common_runtime/bfc_allocator.cc:800] InUse at 0x2b6ef5f50640 next 23 of size 296448
+2020-04-16 10:17:02.542224: I tensorflow/core/common_runtime/bfc_allocator.cc:800] InUse at 0x2b6ef5f98c40 next 24 of size 296448
+2020-04-16 10:17:02.542236: I tensorflow/core/common_runtime/bfc_allocator.cc:800] InUse at 0x2b6ef5fe1240 next 25 of size 12800
+2020-04-16 10:17:02.542248: I tensorflow/core/common_runtime/bfc_allocator.cc:800] InUse at 0x2b6ef5fe4440 next 26 of size 12800
+2020-04-16 10:17:02.542260: I tensorflow/core/common_runtime/bfc_allocator.cc:800] Free  at 0x2b6ef5fe7640 next 18446744073709551615 of size 5268146688
+2020-04-16 10:17:02.542272: I tensorflow/core/common_runtime/bfc_allocator.cc:793] Next region of size 17179869184
+2020-04-16 10:17:02.542284: I tensorflow/core/common_runtime/bfc_allocator.cc:800] InUse at 0x2b7050002040 next 3 of size 11908403200
+2020-04-16 10:17:02.542296: I tensorflow/core/common_runtime/bfc_allocator.cc:800] Free  at 0x2b7315cbf040 next 18446744073709551615 of size 5271465984
+2020-04-16 10:17:02.542308: I tensorflow/core/common_runtime/bfc_allocator.cc:793] Next region of size 34359738368
+2020-04-16 10:17:02.542319: I tensorflow/core/common_runtime/bfc_allocator.cc:800] InUse at 0x2b74854b9040 next 13 of size 11908403200
+2020-04-16 10:17:02.542332: I tensorflow/core/common_runtime/bfc_allocator.cc:800] InUse at 0x2b774b176040 next 28 of size 11908403200
+2020-04-16 10:17:02.542344: I tensorflow/core/common_runtime/bfc_allocator.cc:800] Free  at 0x2b7a10e33040 next 18446744073709551615 of size 10542931968
+2020-04-16 10:17:02.542356: I tensorflow/core/common_runtime/bfc_allocator.cc:793] Next region of size 32645660672
+2020-04-16 10:17:02.542367: I tensorflow/core/common_runtime/bfc_allocator.cc:800] InUse at 0x2b7d20000040 next 30 of size 11908403200
+2020-04-16 10:17:02.542436: I tensorflow/core/common_runtime/bfc_allocator.cc:800] InUse at 0x2b7fe5cbd040 next 31 of size 11908403200
+2020-04-16 10:17:02.542455: I tensorflow/core/common_runtime/bfc_allocator.cc:800] Free  at 0x2b82ab97a040 next 18446744073709551615 of size 8828854272
+2020-04-16 10:17:02.542468: I tensorflow/core/common_runtime/bfc_allocator.cc:793] Next region of size 1048576
+2020-04-16 10:17:02.542481: I tensorflow/core/common_runtime/bfc_allocator.cc:800] InUse at 0x5602568edfc0 next 1 of size 69632
+2020-04-16 10:17:02.542493: I tensorflow/core/common_runtime/bfc_allocator.cc:800] InUse at 0x5602568fefc0 next 8 of size 12800
+2020-04-16 10:17:02.542505: I tensorflow/core/common_runtime/bfc_allocator.cc:800] InUse at 0x5602569021c0 next 9 of size 12800
+2020-04-16 10:17:02.542517: I tensorflow/core/common_runtime/bfc_allocator.cc:800] InUse at 0x5602569053c0 next 7 of size 12800
+2020-04-16 10:17:02.542528: I tensorflow/core/common_runtime/bfc_allocator.cc:800] InUse at 0x5602569085c0 next 5 of size 12800
+2020-04-16 10:17:02.542540: I tensorflow/core/common_runtime/bfc_allocator.cc:800] InUse at 0x56025690b7c0 next 10 of size 12800
+2020-04-16 10:17:02.542552: I tensorflow/core/common_runtime/bfc_allocator.cc:800] Free  at 0x56025690e9c0 next 32 of size 12800
+2020-04-16 10:17:02.542564: I tensorflow/core/common_runtime/bfc_allocator.cc:800] InUse at 0x560256911bc0 next 33 of size 12800
+2020-04-16 10:17:02.542576: I tensorflow/core/common_runtime/bfc_allocator.cc:800] Free  at 0x560256914dc0 next 11 of size 384000
+2020-04-16 10:17:02.542589: I tensorflow/core/common_runtime/bfc_allocator.cc:800] InUse at 0x5602569729c0 next 18446744073709551615 of size 505344
+2020-04-16 10:17:02.542600: I tensorflow/core/common_runtime/bfc_allocator.cc:809]      Summary of in-use Chunks by size: 
+2020-04-16 10:17:02.542615: I tensorflow/core/common_runtime/bfc_allocator.cc:812] 8 Chunks of size 12800 totalling 100.0KiB
+2020-04-16 10:17:02.542629: I tensorflow/core/common_runtime/bfc_allocator.cc:812] 1 Chunks of size 69632 totalling 68.0KiB
+2020-04-16 10:17:02.542643: I tensorflow/core/common_runtime/bfc_allocator.cc:812] 10 Chunks of size 296448 totalling 2.83MiB
+2020-04-16 10:17:02.542657: I tensorflow/core/common_runtime/bfc_allocator.cc:812] 1 Chunks of size 329216 totalling 321.5KiB
+2020-04-16 10:17:02.542670: I tensorflow/core/common_runtime/bfc_allocator.cc:812] 1 Chunks of size 505344 totalling 493.5KiB
+2020-04-16 10:17:02.542684: I tensorflow/core/common_runtime/bfc_allocator.cc:812] 6 Chunks of size 11908403200 totalling 66.54GiB
+2020-04-16 10:17:02.542697: I tensorflow/core/common_runtime/bfc_allocator.cc:816] Sum Total of in-use chunks: 66.55GiB
+2020-04-16 10:17:02.542710: I tensorflow/core/common_runtime/bfc_allocator.cc:818] total_region_allocated_bytes_: 101366185984 memory_limit_: 101366185984 available bytes: 0 curr_region_allocation_bytes_: 137438953472
+2020-04-16 10:17:02.542725: I tensorflow/core/common_runtime/bfc_allocator.cc:824] Stats: 
+Limit:                101366185984
+InUse:                 71454390272
+MaxInUse:              71455209472
+NumAllocs:                      87
+MaxAllocSize:          11908403200
+
+2020-04-16 10:17:02.542740: W tensorflow/core/common_runtime/bfc_allocator.cc:319] ************____*************____*************************_________*************************_______*
+2020-04-16 10:17:02.542793: W tensorflow/core/framework/op_kernel.cc:1502] OP_REQUIRES failed at cwise_ops_common.cc:70 : Resource exhausted: OOM when allocating tensor with shape[930344,3200] and type float on /job:localhost/replica:0/task:0/device:CPU:0 by allocator mklcpu
+1
+1
+1
+1
+1
+1
+Traceback (most recent call last):
+  File "tune_nn_45.py", line 36, in <module>
+    tune_nn.tune_parameters(nn_params, 'count')
+  File "/uufs/chpc.utah.edu/common/home/u0883495/EndoReddit/scripts/tune_train_classifier/tune_hyperparameters_v2.py", line 34, in tune_parameters
+    self.run_cv(n, mx, mn, h1, o, vector)
+  File "/uufs/chpc.utah.edu/common/home/u0883495/EndoReddit/scripts/tune_train_classifier/tune_hyperparameters_v2.py", line 76, in run_cv
+    callbacks=[early_stopping_monitor], verbose=0)
+  File "/uufs/chpc.utah.edu/common/home/u0883495/software/pkg/miniconda3/lib/python3.7/site-packages/keras/engine/training.py", line 1239, in fit
+    validation_freq=validation_freq)
+  File "/uufs/chpc.utah.edu/common/home/u0883495/software/pkg/miniconda3/lib/python3.7/site-packages/keras/engine/training_arrays.py", line 196, in fit_loop
+    outs = fit_function(ins_batch)
+  File "/uufs/chpc.utah.edu/common/home/u0883495/software/pkg/miniconda3/lib/python3.7/site-packages/tensorflow/python/keras/backend.py", line 3292, in __call__
+    run_metadata=self.run_metadata)
+  File "/uufs/chpc.utah.edu/common/home/u0883495/software/pkg/miniconda3/lib/python3.7/site-packages/tensorflow/python/client/session.py", line 1458, in __call__
+    run_metadata_ptr)
+tensorflow.python.framework.errors_impl.ResourceExhaustedError: OOM when allocating tensor with shape[930344,3200] and type float on /job:localhost/replica:0/task:0/device:CPU:0 by allocator mklcpu
+	 [[{{node training/Adadelta/mul}}]]
+Hint: If you want to see a list of allocated tensors when OOM happens, add report_tensor_allocations_upon_oom to RunOptions for current allocation info.
+
+srun: error: lp184: task 0: Exited with exit code 1
