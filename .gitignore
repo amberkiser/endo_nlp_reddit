@@ -1,6 +1,6 @@
 .idea
 .DS_store
-data/
+data_noGitHub/
 models/
 Kiser_final_submission.zip
 Kiser_Project.mov
